@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Parlour Appointment System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #ff69b4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .card h2 {
+            color: #ff69b4;
+        }
+        .input-group {
+            margin: 10px 0;
+        }
+        .input-group input, .input-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff3385;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-gap: 10px;
+        }
+        .calendar .day {
+            background-color: #f9f9f9;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .calendar .day.unavailable {
+            background-color: #ddd;
+            cursor: not-allowed;
+        }
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Beauty Parlour Appointment Booking System</h1>
+        <p>Your beauty, your schedule, our service.</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Browse Services</a>
+        <a href="#">Book Appointment</a>
+        <a href="#">Login</a>
+        <a href="#">Admin Panel</a>
+    </nav>
+
+    <div class="container">
+        <!-- Search & Browse Services -->
+        <div class="card">
+            <h2>Browse Available Services</h2>
+            <form action="#">
+                <div class="input-group">
+                    <input type="text" placeholder="Search Services" required>
+                </div>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <!-- Appointment Booking Form -->
+        <div class="card">
+            <h2>Book an Appointment</h2>
+            <form action="#">
+                <div class="input-group">
+                    <select required>
+                        <option value="">Select Service</option>
+                        <option value="haircut">Haircut</option>
+                        <option value="facial">Facial</option>
+                        <option value="manicure">Manicure</option>
+                        <option value="massage">Massage</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <select required>
+                        <option value="">Select Stylist</option>
+                        <option value="stylist1">Stylist 1</option>
+                        <option value="stylist2">Stylist 2</option>
+                        <option value="stylist3">Stylist 3</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <input type="date" required>
+                </div>
+                <div class="input-group">
+                    <input type="time" required>
+                </div>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+
+        <!-- Reservation Calendar -->
+        <div class="card">
+            <h2>Available Appointment Dates</h2>
+            <div class="calendar">
+                <div class="day">Mon</div>
+                <div class="day unavailable">Tue</div>
+                <div class="day">Wed</div>
+                <div class="day unavailable">Thu</div>
+                <div class="day">Fri</div>
+                <div class="day">Sat</div>
+                <div class="day">Sun</div>
+            </div>
+        </div>
+
+        <!-- Payment Section -->
+        <div class="card">
+            <h2>Payment</h2>
+            <form action="#">
+                <div class="input-group">
+                    <input type="number" placeholder="Amount" required>
+                </div>
+                <div class="input-group">
+                    <select required>
+                        <option value="">Select Payment Method</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="stripe">Stripe</option>
+                        <option value="card">Credit/Debit Card</option>
+                    </select>
+                </div>
+                <button type="submit">Proceed to Payment</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Beauty Parlour Appointment System | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
