@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Library Management System</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#catalog">Catalog</a></li>
+            <li><a href="#user-section">User Section</a></li>
+            <li><a href="#admin-section">Admin Dashboard</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <!-- Catalog Section -->
+        <section id="catalog">
+            <h2>Book Catalog</h2>
+            <form id="searchBookForm">
+                <input type="text" placeholder="Search for books..." name="search" id="search" required>
+                <button type="submit">Search</button>
+            </form>
+            <div id="book-results">
+                <p>Search results will appear here.</p>
+            </div>
+        </section>
+
+        <!-- User Section -->
+        <section id="user-section">
+            <h2>User Section</h2>
+            <div id="user-login">
+                <h3>Login</h3>
+                <form id="userLoginForm">
+                    <input type="email" placeholder="Email" name="email" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <div id="user-register">
+                <h3>Register</h3>
+                <form id="userRegisterForm">
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="email" placeholder="Email" name="email" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Admin Section -->
+        <section id="admin-section">
+            <h2>Admin Dashboard</h2>
+            <div id="admin-login">
+                <h3>Login</h3>
+                <form id="adminLoginForm">
+                    <input type="email" placeholder="Admin Email" name="email" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <div id="admin-actions">
+                <h3>Admin Actions</h3>
+                <ul>
+                    <li><button>Add Book</button></li>
+                    <li><button>Update/Delete Book</button></li>
+                    <li><button>Issue Book</button></li>
+                    <li><button>Return Book Status</button></li>
+                    <li><button>Make Fine</button></li>
+                    <li><button>Update Material</button></li>
+                    <li><button>View Material</button></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <textarea placeholder="Your message..." name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Library Management System. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

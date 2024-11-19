@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map with Hotspots</title>
+    <style>
+        /* Styles for the webpage */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+        #info-box {
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="map"></div> <!-- This will display the map -->
+
+    <div id="info-box">
+        <h2>Click on a hot spot to see information!</h2>
+    </div>
+
+    <!-- Include Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPGschirbD9OYrYLiRX_HZspVIPJUsuug&callback=initMap&libraries=&v=weekly" 
+    async></script>
+
+    <script>
+        // Initialize the map
+        function initMap() {
+            // Create the map object
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 20.5937, lng: 78.9629}, // Center of India
+                zoom: 5 // Zoom level
+            });
+
+            // Define the hotspots (cities) with lat, lng, name, and info
+            var hotspots = [
+                {lat: 28.6139, lng: 77.2090, name: 'Delhi', info: 'Capital of India'},
+                {lat: 19.0760, lng: 72.8777, name: 'Mumbai', info: 'Financial capital of India'},
+                {lat: 9.9716, lng: 77.5946, name: 'Tamilnadu', info: 'Silicon Valley of India'}
+                // You can add more hotspots here
+            ];
+
+            // Create markers and info windows for each hotspot
+            hotspots.forEach(function(hotspot) {
+                var marker = new google.maps.Marker({
+                    position: {lat: hotspot.lat, lng: hotspot.lng},
+                    map: map,
+                    title: hotspot.name
+                });
+
+                // Create an InfoWindow to display when the marker is clicked
+                var infoWindow = new google.maps.InfoWindow({
+                    content: '<h3>' + hotspot.name + '</h3><p>' + hotspot.info + '</p>'
+                });
+
+                // Add click event to open InfoWindow
+                marker.addListener('click', function() {
+                    infoWindow.open(map, marker);
+
+                    // Also update the info-box below the map
+                    document.getElementById('info-box').innerHTML = '<h2>' + hotspot.name + '</h2><p>' + hotspot.info + '</p>';
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+            flex: 1;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container input, .form-container select, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-container button {
+            background-color: #333;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .form-container button:hover {
+            background-color: #444;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Bus Ticket Booking System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#booking">Book Ticket</a></li>
+                <li><a href="#admin">Admin Panel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to the Bus Ticket Booking System</h2>
+        <p>Find buses by route, date, and time. Book your seats easily, and manage your bookings through your account.</p>
+    </section>
+
+    <!-- User Registration Section -->
+    <section id="register">
+        <h2>User Registration</h2>
+        <div class="form-container">
+            <form action="#" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login">
+        <h2>Login</h2>
+        <div class="form-container">
+            <form action="#" method="POST">
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="username" required>
+
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Bus Ticket Booking Section -->
+    <section id="booking">
+        <h2>Book Your Ticket</h2>
+        <div class="form-container">
+            <form action="#" method="POST">
+                <label for="route">Select Route:</label>
+                <select id="route" name="route">
+                    <option value="delhi-mumbai">Delhi - Mumbai</option>
+                    <option value="bangalore-chennai">Bangalore - Chennai</option>
+                    <option value="kolkata-delhi">Kolkata - Delhi</option>
+                </select>
+
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="seats">Number of Seats:</label>
+                <input type="number" id="seats" name="seats" min="1" required>
+
+                <button type="submit">Book Ticket</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Admin Panel Section -->
+    <section id="admin">
+        <h2>Admin Panel</h2>
+        <div class="form-container">
+            <h3>Manage Bus Information</h3>
+            <form action="#" method="POST">
+                <label for="bus-category">Bus Category:</label>
+                <select id="bus-category" name="category">
+                    <option value="volvo">Volvo</option>
+                    <option value="sleeper">Sleeper</option>
+                    <option value="coach">Coach</option>
+                </select>
+
+                <label for="bus-description">Bus Description:</label>
+                <textarea id="bus-description" name="description"></textarea>
+
+                <label for="seats-available">Available Seats:</label>
+                <input type="number" id="seats-available" name="seats" required>
+
+                <button type="submit">Update Bus Information</button>
+            </form>
+
+            <h3>Generate Report</h3>
+            <form action="#" method="POST">
+                <label for="report-type">Report Type:</label>
+                <select id="report-type" name="report-type">
+                    <option value="bookings">Bookings</option>
+                    <option value="users">Users</option>
+                    <option value="buses">Buses</option>
+                </select>
+
+                <button type="submit">Generate Report</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact Us: +123456789 | info@busticketbooking.com</p>
+        <p>© 2024 Bus Ticket Booking. All rights reserved.</p>
+    </footer>
+</body>
+</html>
