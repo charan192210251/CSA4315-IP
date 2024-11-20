@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Pass & Ticket Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #218838;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section li {
+            background-color: #e9ecef;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bus Pass & Ticket Management</h1>
+        <p>Efficient and Seamless Travel Solutions</p>
+    </header>
+    <nav>
+        <a href="#admin">Admin Features</a>
+        <a href="#user">User Features</a>
+        <a href="#conductor">Conductor Features</a>
+    </nav>
+    <main>
+        <section id="admin" class="section">
+            <h2>Admin Features</h2>
+            <ul>
+                <li><button>Login</button></li>
+                <li><button>Manage Student & Route Pass</button></li>
+                <li><button>Manage Conductor Login</button></li>
+                <li><button>Approve Bus Pass</button></li>
+                <li><button>Generate QR Code</button></li>
+                <li><button>Create Bus Details</button></li>
+                <li><button>Create Route Information</button></li>
+            </ul>
+        </section>
+        <section id="user" class="section">
+            <h2>User Features</h2>
+            <ul>
+                <li><button>Register</button></li>
+                <li><button>Login</button></li>
+                <li><button>Add Money - eWallet</button></li>
+                <li><button>Buy Bus eTicket</button></li>
+                <li><button>Apply for New Bus Pass</button></li>
+                <li><button>Renew Bus Pass</button></li>
+                <li><button>Apply for Student & Route Pass</button></li>
+                <li><button>Get QR Code for Bus Pass</button></li>
+                <li><button>Calculate Expected Time to Reach</button></li>
+            </ul>
+        </section>
+        <section id="conductor" class="section">
+            <h2>Conductor Features</h2>
+            <ul>
+                <li><button>Login</button></li>
+                <li><button>Scan QR Code</button></li>
+                <li><button>Verify Bus Pass ID</button></li>
+                <li><button>Verify Bus Ticket</button></li>
+                <li><button>Update Bus Location</button></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Bus Pass & Ticket Management. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

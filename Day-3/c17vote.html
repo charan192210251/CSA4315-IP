@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoteOnline - Secure E-Voting Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section li {
+            background-color: #e9ecef;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VoteOnline</h1>
+        <p>Secure & Transparent E-Voting Platform</p>
+    </header>
+    <nav>
+        <a href="#admin">Admin Features</a>
+        <a href="#user">User Features</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <main>
+        <section id="admin" class="section">
+            <h2>Admin Features</h2>
+            <ul>
+                <li><button>Create Election Candidate</button></li>
+                <li><button>Allocate Election Data to Candidate</button></li>
+                <li><button>Allocate Users to Wards</button></li>
+                <li><button>Create Voter List</button></li>
+                <li><button>Import Voter List</button></li>
+                <li><button>View & Update Voter List</button></li>
+                <li><button>Get Election Results</button></li>
+            </ul>
+        </section>
+        <section id="user" class="section">
+            <h2>User Features</h2>
+            <ul>
+                <li>Login using Voter ID</li>
+                <li>OTP Login Verification</li>
+                <li>Get OTP for Voting</li>
+                <li>Select Candidate</li>
+                <li>Submit Vote</li>
+                <li>View Voting History</li>
+                <li>Track Election Progress</li>
+            </ul>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>If you have any issues or queries, please contact us at <a href="mailto:support@voteonline.com">support@voteonline.com</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 VoteOnline. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Management Information System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #dc3545;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #bd2130;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section li {
+            background-color: #f1f1f1;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #dc3545;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #bd2130;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blood Management Information System</h1>
+        <p>Efficient, Secure, and Reliable Blood Donor and Bank Management</p>
+    </header>
+    <nav>
+        <a href="#donor">Donor/User Features</a>
+        <a href="#hospital">Hospital Features</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <main>
+        <section id="donor" class="section">
+            <h2>Donor/User Features</h2>
+            <ul>
+                <li><button>Login</button></li>
+                <li><button>Register</button></li>
+                <li><button>Post Donor Information</button></li>
+                <li><button>My Donor Info</button></li>
+                <li><button>Search Donor Details</button></li>
+                <li><button>Search Blood Bank Details</button></li>
+                <li><button>Logout</button></li>
+            </ul>
+        </section>
+        <section id="hospital" class="section">
+            <h2>Hospital Features</h2>
+            <ul>
+                <li><button>Register</button></li>
+                <li><button>Login</button></li>
+                <li><button>Post Blood Bank Information</button></li>
+                <li><button>Update Blood Group Status</button></li>
+                <li><button>View Blood Bank Details</button></li>
+                <li><button>Logout</button></li>
+            </ul>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>For support or queries, reach out at <a href="mailto:support@bloodmanagement.com">support@bloodmanagement.com</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Blood Management Information System. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

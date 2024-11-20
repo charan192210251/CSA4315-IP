@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlossomGifts - Flowers & Gifts for Every Occasion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #ff69b4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #ffb6c1;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        .categories, .admin-panel {
+            margin-bottom: 30px;
+        }
+        .categories ul, .admin-panel ul {
+            list-style: none;
+            padding: 0;
+        }
+        .categories li, .admin-panel li {
+            background-color: #ffe4e1;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #ff69b4;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BlossomGifts</h1>
+        <p>Your one-stop destination for thoughtful gifts and flowers</p>
+    </header>
+    <nav>
+        <a href="#categories">Categories</a>
+        <a href="#subcategories">Subcategories</a>
+        <a href="#admin-panel">Admin Panel</a>
+    </nav>
+    <main>
+        <section id="categories" class="categories">
+            <h2>Shop by Categories</h2>
+            <ul>
+                <li>Flowers</li>
+                <li>Gift Baskets</li>
+                <li>Personalized Gifts</li>
+                <li>Anniversary Gifts</li>
+                <li>Birthday Surprises</li>
+            </ul>
+        </section>
+        <section id="subcategories" class="categories">
+            <h2>Explore Subcategories</h2>
+            <ul>
+                <li>Roses</li>
+                <li>Chocolates & Flowers</li>
+                <li>Custom Photo Frames</li>
+                <li>Luxury Hampers</li>
+            </ul>
+        </section>
+        <section id="admin-panel" class="admin-panel">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li><button>Add New Items</button></li>
+                <li><button>Remove Items</button></li>
+                <li><button>Modify Item Prices</button></li>
+                <li><button>View Customer Details</button></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 BlossomGifts. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
