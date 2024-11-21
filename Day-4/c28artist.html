@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ArtistryHub - Emily Harris Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        .navbar {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Homepage Section */
+        .homepage {
+            background: #333 url('emily-banner.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .homepage h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        /* About the Artist */
+        .about {
+            background-color: white;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .artist-photo {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            padding: 50px;
+            background-color: #fafafa;
+            text-align: center;
+        }
+
+        .portfolio h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .artwork {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        .artwork img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .artwork p {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        /* Discography Section */
+        .discography {
+            padding: 50px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .discography h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .discography ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .discography li {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Media Gallery Section */
+        .gallery {
+            padding: 50px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .gallery iframe {
+            width: 80%;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+
+        /* News Section */
+        .news {
+            padding: 50px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .news h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .news ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .news li {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 50px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About the Artist</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#discography">Discography</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Homepage Section -->
+    <section id="home" class="homepage">
+        <div class="hero">
+            <img src="emily-banner.jpg" alt="Emily Harris Artwork" class="hero-image">
+            <h1>Welcome to ArtistryHub</h1>
+            <p>Explore the world of Emily Harris through her incredible art and creative journey.</p>
+        </div>
+    </section>
+
+    <!-- About the Artist Section -->
+    <section id="about" class="about">
+        <div class="content">
+            <img src="emily-portrait.jpg" alt="Emily Harris Portrait" class="artist-photo">
+            <h2>About Emily Harris</h2>
+            <p>Emily Harris is a renowned visual artist known for her evocative paintings and mixed-media installations. Her work explores themes of identity, nature, and human connection. With numerous exhibitions worldwide, Emily has garnered recognition for her innovative approach to contemporary art.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+            <div class="artwork">
+                <img src="artwork1.jpg" alt="Artwork 1">
+                <p>Title of Artwork 1</p>
+            </div>
+            <div class="artwork">
+                <img src="artwork2.jpg" alt="Artwork 2">
+                <p>Title of Artwork 2</p>
+            </div>
+            <div class="artwork">
+                <img src="artwork3.jpg" alt="Artwork 3">
+                <p>Title of Artwork 3</p>
+            </div>
+            <!-- More artworks can be added here -->
+        </div>
+    </section>
+
+    <!-- Discography Section -->
+    <section id="discography" class="discography">
+        <h2>Discography</h2>
+        <ul>
+            <li>Album Title 1 - Released Date</li>
+            <li>Album Title 2 - Released Date</li>
+            <li>Album Title 3 - Released Date</li>
+            <!-- More albums can be added here -->
+        </ul>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Media Gallery</h2>
+        <div class="media">
+            <iframe src="https://www.youtube.com/embed/samplevideo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Emily Harris' Interview at Gallery Opening</p>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news">
+        <h2>News and Updates</h2>
+        <ul>
+            <li>Upcoming Exhibition in Paris - 2024</li>
+            <li>New Art Release at Art Fair in Berlin</li>
+            <li>Interview with Art Magazine XYZ - Read Now</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Emily Harris</h2>
+        <form action="submit-form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 ArtistryHub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

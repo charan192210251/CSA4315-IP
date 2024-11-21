@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solid Waste Management System</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+        }
+        header {
+            background-color: #3b3b3b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        header p {
+            font-size: 18px;
+        }
+        nav {
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            padding: 30px;
+            margin: 20px;
+        }
+        .feature {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .feature h3 {
+            color: #4CAF50;
+        }
+        footer {
+            background-color: #3b3b3b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            section {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Solid Waste Management System</h1>
+        <p>Optimizing Waste Collection, Routing, and Reporting</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#admin">Administrator</a>
+        <a href="#public">General Public</a>
+        <a href="#driver">Driver</a>
+    </nav>
+
+    <!-- Administrator Section -->
+    <section id="admin">
+        <h2>Administrator Features</h2>
+        <div class="feature">
+            <h3>Login</h3>
+            <p>Admins log in securely to access system functionalities.</p>
+        </div>
+        <div class="feature">
+            <h3>Manage Garbage Bins</h3>
+            <p>Admins can add, update, or delete garbage bins in the system.</p>
+        </div>
+        <div class="feature">
+            <h3>Assign Routes</h3>
+            <p>Admins assign the most efficient routes for drivers to ensure quick collection.</p>
+        </div>
+        <div class="feature">
+            <h3>View Reports</h3>
+            <p>Admins can access and analyze garbage collection reports.</p>
+        </div>
+    </section>
+
+    <!-- General Public Section -->
+    <section id="public">
+        <h2>General Public Features</h2>
+        <div class="feature">
+            <h3>Register & Login</h3>
+            <p>The public can create an account and log in to track their complaints.</p>
+        </div>
+        <div class="feature">
+            <h3>Register Complaints</h3>
+            <p>Users can report any issues with garbage collection or disposal.</p>
+        </div>
+        <div class="feature">
+            <h3>Track Complaints</h3>
+            <p>Users can track the status of their complaints and receive updates on progress.</p>
+        </div>
+    </section>
+
+    <!-- Driver Section -->
+    <section id="driver">
+        <h2>Driver Features</h2>
+        <div class="feature">
+            <h3>Login</h3>
+            <p>Drivers log in to view their tasks for the day.</p>
+        </div>
+        <div class="feature">
+            <h3>Choose Routes</h3>
+            <p>Drivers can view and select the best routes for garbage collection.</p>
+        </div>
+        <div class="feature">
+            <h3>Update Garbage Load</h3>
+            <p>Drivers can update the system with the amount of garbage collected during the route.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Solid Waste Management System | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

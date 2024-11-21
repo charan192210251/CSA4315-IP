@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ram Infotech</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff6f61, #ffcc00);
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        .navbar {
+            background-color: #444;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        .navbar a {
+            color: white;
+            font-size: 1.1rem;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            color: #ffcc00;
+            border-bottom: 2px solid #ffcc00;
+        }
+
+        section {
+            padding: 30px;
+            margin: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            flex-grow: 1;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #ddd;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .card {
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 12px 25px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            display: inline-block;
+        }
+
+        .button:hover {
+            background-color: #ffcc00;
+            color: #333;
+        }
+
+        .form-container {
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .form-container form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .card {
+                margin: 10px 0;
+            }
+
+            .form-container form {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Ram Infotech</h1>
+        <p>Your One-Stop Laptop Shop & Service Center</p>
+    </header>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sales">Laptop Sales</a></li>
+            <li><a href="#services">Laptop Services</a></li>
+            <li><a href="#customer">Customer Info</a></li>
+            <li><a href="#stock">Stock Maintenance</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <section id="home">
+        <h2>Welcome to Ram Infotech</h2>
+        <p>We offer a wide range of laptops for purchase and expert services for all your laptop repair needs. Whether you're buying a new laptop or need repairs, we have got you covered with excellent customer service.</p>
+    </section>
+
+    <section id="sales">
+        <h2>Laptop Sales</h2>
+        <div class="card">
+            <h3>Model X Laptop</h3>
+            <p>Specifications: Intel i7, 16GB RAM, 512GB SSD, 15-inch Display</p>
+            <p>Price: ₹70,000</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+        <div class="card">
+            <h3>Model Y Laptop</h3>
+            <p>Specifications: AMD Ryzen 5, 8GB RAM, 512GB SSD, 14-inch Display</p>
+            <p>Price: ₹50,000</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Laptop Services</h2>
+        <p>Our service center provides a range of services including laptop repair, maintenance, and upgrades. Schedule your service appointment and track your repair status through our easy-to-use system.</p>
+        <a href="#serviceForm" class="button">Schedule Service</a>
+    </section>
+
+    <section id="customer">
+        <h2>Customer Information</h2>
+        <p>Track your laptop purchase and service details in your customer profile. Stay updated with the latest offers and discounts.</p>
+    </section>
+
+    <section id="stock">
+        <h2>Stock Maintenance</h2>
+        <p>Our system tracks the stock of laptops in the store, ensuring that we never run out of your favorite models. Stay updated on availability in real-time.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="form-container">
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ram Infotech. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

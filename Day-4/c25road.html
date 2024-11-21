@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IJSSE Journal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the footer stays at the bottom */
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 50px;
+            margin: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1; /* Allow content to take available space */
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        section p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .navbar li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>IJSSE Journal</h1>
+        <p>International Journal of Scientific and Social Excellence</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Journal</a></li>
+            <li><a href="#ethics">Publication Ethics</a></li>
+            <li><a href="#editorial">Editorial Board</a></li>
+            <li><a href="#reviewers">Reviewers</a></li>
+            <li><a href="#authors">Authors</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#callforpapers">Call for Papers</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <section id="home">
+        <h2>Welcome to IJSSE Journal</h2>
+        <p>The IJSSE Journal is a platform for scholarly articles in the fields of scientific and social excellence.</p>
+    </section>
+
+    <section id="about">
+        <h2>About the Journal</h2>
+        <p>Our mission is to foster academic research and provide a platform for significant contributions in the field of science and social sciences.</p>
+    </section>
+
+    <section id="ethics">
+        <h2>Publication Ethics</h2>
+        <p>We follow rigorous ethical standards in the publication of articles to ensure credibility and integrity.</p>
+    </section>
+
+    <section id="editorial">
+        <h2>Editorial Board</h2>
+        <p>Our editorial board consists of highly respected experts in their respective fields.</p>
+    </section>
+
+    <section id="reviewers">
+        <h2>For Reviewers</h2>
+        <p>Our reviewers play a key role in maintaining the quality and standards of our journal.</p>
+    </section>
+
+    <section id="authors">
+        <h2>For Authors</h2>
+        <p>Authors can submit their manuscripts through our easy-to-use submission system.</p>
+    </section>
+
+    <section id="articles">
+        <h2>Articles</h2>
+        <p>Explore the latest published articles, archives, and more.</p>
+    </section>
+
+    <section id="callforpapers">
+        <h2>Call for Papers</h2>
+        <p>Submit your manuscript for upcoming issues of IJSSE Journal.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="/submit_form" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 IJSSE. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

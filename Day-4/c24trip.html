@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travels</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            background-color: #3498db;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            color: #3498db;
+            text-align: center;
+            font-size: 28px;
+        }
+        .card {
+            background-color: #ecf0f1;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            color: #2c3e50;
+            font-size: 22px;
+        }
+        .card p {
+            color: #7f8c8d;
+            font-size: 16px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            section {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Wanderlust Travels</h1>
+        <p>Your Travel Companion - Explore the World</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#user">User</a>
+        <a href="#admin">Admin</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- User Section -->
+    <section id="user">
+        <h2>User Features</h2>
+        <div class="card">
+            <h3>Register</h3>
+            <p>Sign up to start planning your travel.</p>
+        </div>
+        <div class="card">
+            <h3>Login</h3>
+            <p>Log in to manage your bookings and explore more travel options.</p>
+        </div>
+        <div class="card">
+            <h3>Explore Travel Options</h3>
+            <p>View details about food, accommodation, and routes.</p>
+        </div>
+        <div class="card">
+            <h3>Book Accommodation</h3>
+            <p>Find and book the perfect accommodation for your trip.</p>
+        </div>
+    </section>
+
+    <!-- Admin Section -->
+    <section id="admin">
+        <h2>Admin Features</h2>
+        <div class="card">
+            <h3>Login</h3>
+            <p>Admins can log in to manage the system.</p>
+        </div>
+        <div class="card">
+            <h3>Post Tourism Details</h3>
+            <p>Admins can add new tourism details to the system.</p>
+        </div>
+        <div class="card">
+            <h3>Manage Travel Information</h3>
+            <p>Admins can update details about food, hotels, and routes.</p>
+        </div>
+        <div class="card">
+            <h3>View Booking Details</h3>
+            <p>Admins can manage and view all customer booking details.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="card">
+            <h3>Need Assistance?</h3>
+            <p>If you have any questions, feel free to reach us at <strong>support@wanderlusttravels.com</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Wanderlust Travels | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
